@@ -1,9 +1,13 @@
 import "./Header.css";
+import logo from "./images/logo.png";
+import Navigation from "../navigation/Navigation";
 
 const Header = () => {
     return (
-        <header>
+        <header className="main-header">
+            <img src={logo} alt="Rhone Steakhouse Logo" />
             <h1>Rhone Steakhouse</h1>
+            <Navigation />
         </header>
     );
 };
