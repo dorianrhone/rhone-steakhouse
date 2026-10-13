@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rhone-steakhouse/static/css/main.d7546660.css",
+    "main.js": "/rhone-steakhouse/static/js/main.ef92e392.js",
+    "index.html": "/rhone-steakhouse/index.html",
+    "main.d7546660.css.map": "/rhone-steakhouse/static/css/main.d7546660.css.map",
+    "main.ef92e392.js.map": "/rhone-steakhouse/static/js/main.ef92e392.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7546660.css",
+    "static/js/main.ef92e392.js"
+  ]
+}
