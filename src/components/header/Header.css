@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     padding: 10px 20px;
     border-bottom: 1px solid var(--gold);
     background-color: var(--bg-lighter);
