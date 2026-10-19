@@ -2,7 +2,7 @@ import "./Navigation.css";
 
 const Navigation = () => {
     return (
-        <nav id="main-nav">
+        <nav className="main-nav">
             <ul>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#menu">MENU</a></li>
