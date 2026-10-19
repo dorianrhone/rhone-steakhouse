@@ -8,3 +8,18 @@
     font-size: 0.9rem;
     margin-bottom: 0;
 }
+
+@media (max-width: 768px) {
+    .main-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-footer h2 {
+        font-size: 1.2rem;
+    }
+
+    .main-footer p {
+        font-size: 0.8rem;
+    }
+}

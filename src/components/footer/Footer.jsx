@@ -7,6 +7,6 @@ const Footer = () => {
             <p>&copy; dorianrhone</p>
         </footer>
     );
-}
+};
 
 export default Footer;
