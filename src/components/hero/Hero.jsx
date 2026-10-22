@@ -1,5 +1,5 @@
 import "./Hero.css";
-import background1 from ".images/background1.png";
+import background1 from "./images/background1.png";
 
 const Hero = () => {
     return (
