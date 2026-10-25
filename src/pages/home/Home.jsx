@@ -1,21 +1,15 @@
 import Hero from "../../components/hero/Hero";
+import Intro from "../../components/intro/Intro";
+import Features from "../../components/features/Features";
 
 const Home = () => {
     return (
         <div id="home" className="page">
             <Hero />
-            
-            <main>
-                <section className="intro">
-                    <p> WELCOME TO RHONE STEAKHOUSE</p>
-                    <p>
-                        An elevated Charleston dining experience centered around exceptional
-                        cuisine, fine wine, and genuine hospitality.
-                    </p>
-                </section>
-                
-                <div id="features"></div>
+            <Intro />
+            <Features />
 
+            <main>
                 <div className="contact-container">
                     <section className="contact-section">
                         <h2>CONTACT US</h2>
