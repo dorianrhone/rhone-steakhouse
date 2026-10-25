@@ -1,0 +1,12 @@
+.location {
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid #C99A52;
+}
+
+@media (max-width: 1000px) {
+    .location {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,13 @@
+.contact {
+    padding: 20px;
+    border-radius: px;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid #C99A52;
+}
+
+@media (max-width: 1000px) {
+    .contact {
+        padding: 10px;
+    }
+}
