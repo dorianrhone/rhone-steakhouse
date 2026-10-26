@@ -1,17 +1,27 @@
 {
   "files": {
-    "main.css": "/rhone-steakhouse/static/css/main.9b763330.css",
-    "main.js": "/rhone-steakhouse/static/js/main.d12fe5d9.js",
+    "main.css": "/rhone-steakhouse/static/css/main.a42c1bee.css",
+    "main.js": "/rhone-steakhouse/static/js/main.135c4cba.js",
     "static/media/wine.png": "/rhone-steakhouse/static/media/wine.ff715d59695e841d58c6.png",
     "static/media/dining.png": "/rhone-steakhouse/static/media/dining.a3e05e9336291cbe7e87.png",
+    "static/media/cake1.png": "/rhone-steakhouse/static/media/cake1.605bed67acf200c2fbb5.png",
+    "static/media/steak1.png": "/rhone-steakhouse/static/media/steak1.a8d67213152354d0fdd3.png",
     "static/media/steakhouse.png": "/rhone-steakhouse/static/media/steakhouse.0d3f7cc428ccfda2a708.png",
+    "static/media/wine1.png": "/rhone-steakhouse/static/media/wine1.04a8066d9fa4babb05d6.png",
+    "static/media/os1.png": "/rhone-steakhouse/static/media/os1.b6c448be57010cde856f.png",
     "static/media/background1.png": "/rhone-steakhouse/static/media/background1.b518a4aa93fc5dc5c373.png",
+    "static/media/oysters.jpg": "/rhone-steakhouse/static/media/oysters.e525f04930524d8d918f.jpg",
+    "static/media/strip.jpg": "/rhone-steakhouse/static/media/strip.00493c64165e89f24774.jpg",
+    "static/media/calamari.jpg": "/rhone-steakhouse/static/media/calamari.d22fe9ea476f9e02ceff.jpg",
+    "static/media/crabcakes.jpg": "/rhone-steakhouse/static/media/crabcakes.96e04c6ec9c3d4a35211.jpg",
+    "static/media/salmon.jpg": "/rhone-steakhouse/static/media/salmon.024a1d42c34923bbf142.jpg",
+    "static/media/ribeye.jpg": "/rhone-steakhouse/static/media/ribeye.4aa705554e9869845298.jpg",
     "index.html": "/rhone-steakhouse/index.html",
-    "main.9b763330.css.map": "/rhone-steakhouse/static/css/main.9b763330.css.map",
-    "main.d12fe5d9.js.map": "/rhone-steakhouse/static/js/main.d12fe5d9.js.map"
+    "main.a42c1bee.css.map": "/rhone-steakhouse/static/css/main.a42c1bee.css.map",
+    "main.135c4cba.js.map": "/rhone-steakhouse/static/js/main.135c4cba.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b763330.css",
-    "static/js/main.d12fe5d9.js"
+    "static/css/main.a42c1bee.css",
+    "static/js/main.135c4cba.js"
   ]
 }
