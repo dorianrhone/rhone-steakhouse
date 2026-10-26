@@ -53,6 +53,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .reserve-btn:hover {
