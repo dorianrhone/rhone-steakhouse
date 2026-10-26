@@ -1,14 +1,15 @@
 import "./Catering.css";
 import CateringItem from "../../components/cateringItem/CateringItem";
 import Contact from "../../components/contact/Contact";
+import Intro from "../../components/intro/Intro";
 
 const Catering = () => {
     return (
         <div id="catering" className="page">
-            <section className="catering-header">
-                <h2>CATERING</h2>
-                <p>BRING THE RHONE EXPERIENCE TO YOUR EVENT</p>
-            </section>
+            <Intro 
+                title="CATERING"
+                description="BRING THE RHONE EXPERIENCE TO YOUR EVENT"
+            />
             <CateringItem 
                 img="path/to/image.jpg"
                 name="Item Name"

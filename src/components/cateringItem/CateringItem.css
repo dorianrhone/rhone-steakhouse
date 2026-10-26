@@ -1,6 +1,6 @@
 .catering-item {
   display: grid;
-  max-width: 600px;
+  max-width: 500px;
   margin: auto; 
   padding: 30px;
   border-bottom: 1px solid #C99A52; 

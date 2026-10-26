@@ -1,13 +1,10 @@
 import "./Intro.css";
 
-const Intro = () => {
+const Intro = ({ title, description }) => {
   return (
     <div className="intro">
-        <p> WELCOME TO RHONE STEAKHOUSE</p>
-        <p>
-            An elevated Charleston dining experience centered around exceptional
-            cuisine, fine wine, and genuine hospitality.
-        </p>
+        <h1>{title}</h1>
+        <p>{description}</p>
     </div>
   );
 };
