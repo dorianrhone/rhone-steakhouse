@@ -5,8 +5,8 @@ const Catering = () => {
     return (
         <div id="catering" className="page">
             <section className="catering-header">
-                <h2>WELCOME TO RHONE STEAKHOUSE</h2>
-                <p>Experience the finest steaks, fresh seafood, and an exquisite selection of wines.</p>
+                <h2>CATERING</h2>
+                <p>BRING THE RHONE EXPERIENCE TO YOUR EVENT</p>
             </section>
             <CateringItem 
                 img="path/to/image.jpg"

@@ -5,7 +5,7 @@ const Menu = () => {
     return (
         <div id="menu" className="page">
             <section className="menu-header">
-                <h2>WELCOME TO RHONE STEAKHOUSE</h2>
+                <h2>MENU</h2>
                 <p>Experience the finest steaks, fresh seafood, and an exquisite selection of wines.</p>
             </section>
             <MenuItem 
