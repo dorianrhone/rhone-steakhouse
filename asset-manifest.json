@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/rhone-steakhouse/static/css/main.4c3cd6c4.css",
-    "main.js": "/rhone-steakhouse/static/js/main.0f571e0e.js",
+    "main.css": "/rhone-steakhouse/static/css/main.9b763330.css",
+    "main.js": "/rhone-steakhouse/static/js/main.d12fe5d9.js",
+    "static/media/wine.png": "/rhone-steakhouse/static/media/wine.ff715d59695e841d58c6.png",
+    "static/media/dining.png": "/rhone-steakhouse/static/media/dining.a3e05e9336291cbe7e87.png",
+    "static/media/steakhouse.png": "/rhone-steakhouse/static/media/steakhouse.0d3f7cc428ccfda2a708.png",
+    "static/media/background1.png": "/rhone-steakhouse/static/media/background1.b518a4aa93fc5dc5c373.png",
     "index.html": "/rhone-steakhouse/index.html",
-    "main.4c3cd6c4.css.map": "/rhone-steakhouse/static/css/main.4c3cd6c4.css.map",
-    "main.0f571e0e.js.map": "/rhone-steakhouse/static/js/main.0f571e0e.js.map"
+    "main.9b763330.css.map": "/rhone-steakhouse/static/css/main.9b763330.css.map",
+    "main.d12fe5d9.js.map": "/rhone-steakhouse/static/js/main.d12fe5d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c3cd6c4.css",
-    "static/js/main.0f571e0e.js"
+    "static/css/main.9b763330.css",
+    "static/js/main.d12fe5d9.js"
   ]
 }
