@@ -51,6 +51,7 @@
     .category-feature-img {
         height: 250px;
         width: 100%;
+        flex: none;
     }
 
     .category-feature-img img {
