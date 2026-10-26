@@ -1,0 +1,67 @@
+.event-card {
+    background-color: #1a1a1a; /* Matches your dark theme */
+    border: 1px solid #333;
+    margin: 20px auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.event-content {
+    padding: 30px;
+}
+
+.event-title {
+    color: #c9a75d;
+    font-family: serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333; 
+}
+
+.event-date {
+    color: #c9a75d;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.event-description {
+    color: #aaaaaa;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.reserve-btn {
+    background: transparent;
+    color: #c9a75d;
+    border: 1px solid #c9a75d;
+    padding: 12px 35px;
+    font-family: serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.reserve-btn:hover {
+    background: #c9a75d;
+    color: #1a1a1a;
+}
+
+@media (max-width: 1000px) {
+    .event-card {
+        max-width: 90%;
+    }
+}

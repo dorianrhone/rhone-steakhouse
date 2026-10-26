@@ -4,9 +4,11 @@ const ItemCard = ({ img, name, description, price }) => {
     return (
         <div className="item-card">
             <img src={img} alt={name} />
-            <h3>{name}</h3>
+            <div className="item-header">
+                <h3>{name}</h3>
+                <span className="item-price">{price}</span>
+            </div>
             <p>{description}</p>
-            <span>{price}</span>
         </div>
     );
 };
