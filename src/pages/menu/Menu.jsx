@@ -5,8 +5,8 @@ const Menu = () => {
     return (
         <div id="menu" className="page">
             <section className="menu-header">
-                <h2>MENU</h2>
-                <p>Experience the finest steaks, fresh seafood, and an exquisite selection of wines.</p>
+                <h1>OUR MENU</h1>
+                <p>STEAK - SEAFOOD - WINE</p>
             </section>
             <MenuItem 
                 img="path/to/image.jpg"
