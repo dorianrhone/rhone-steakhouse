@@ -1,13 +1,13 @@
-import "./Menu.css";
 import MenuItem from "../../components/menuItem/MenuItem";
+import Intro from "../../components/intro/Intro";
 
 const Menu = () => {
     return (
         <div id="menu" className="page">
-            <section className="menu-header">
-                <h1>OUR MENU</h1>
-                <p>STEAK - SEAFOOD - WINE</p>
-            </section>
+            <Intro
+                title="OUR MENU"
+                description="STEAK - SEAFOOD - WINE"
+            />
             <MenuItem 
                 img="path/to/image.jpg"
                 name="Item Name"

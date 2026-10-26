@@ -1,4 +1,3 @@
-import "./Catering.css";
 import CateringItem from "../../components/cateringItem/CateringItem";
 import Contact from "../../components/contact/Contact";
 import Intro from "../../components/intro/Intro";
@@ -28,7 +27,7 @@ const Catering = () => {
                 description="Third Description"
                 price="$39.99"
             />
-            <Contact />
+           
         </div>
     );
 };
