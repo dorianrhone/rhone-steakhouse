@@ -4,7 +4,7 @@ import ItemCard from "../itemCard/ItemCard";
 const Category = ({ title, categoryImage, items = [], type }) => {
     return (
         <section className="category-container">
-            <div className="category-feauture-img">
+            <div className="category-feature-img">
                 <img src={categoryImage} alt={title} />
             </div>
             <div className="category-content">
