@@ -1,8 +1,9 @@
+import "./Menu.css";
 
 const Menu = () => {
     return (
         <div id="menu" className="page">
-         <p>Menu</p>
+        
         </div>
     );
 };
