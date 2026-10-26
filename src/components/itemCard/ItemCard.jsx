@@ -1,8 +1,8 @@
-import "./CateringItem.css";
+import "./ItemCard.css";
 
-const CateringItem = ({ img, name, description, price }) => {
+const ItemCard = ({ img, name, description, price }) => {
     return (
-        <div className="catering-item">
+        <div className="item-card">
             <img src={img} alt={name} />
             <h3>{name}</h3>
             <p>{description}</p>
@@ -11,4 +11,4 @@ const CateringItem = ({ img, name, description, price }) => {
     );
 };
 
-export default CateringItem;
+export default ItemCard;
