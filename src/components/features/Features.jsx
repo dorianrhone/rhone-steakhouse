@@ -12,18 +12,21 @@ const Features = () => {
                 alt="STEAK PHOTO"
                 title="EXCEPTIONAL CUISINE"
                 description="Prime cuts, fresh seafood, seasonal ingredients."
+                linkTo="/menu"
             />
             <FeatureItem
                 imgage ={wine} 
                 alt="WINE PHOTO"
                 title="CURATED WINE"
                 description="A collection for every occasion."
+                linkTo="/catering"
             />
             <FeatureItem
                 imgage={dining} 
                 alt="DINING PHOTO"
                 title="A REFINED ATMOSPHERE"
                 description="Where modern style meets Southern charm."
+                linkTo="/events"
             />
         </div>
     );

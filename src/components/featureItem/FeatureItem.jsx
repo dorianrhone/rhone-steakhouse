@@ -1,12 +1,13 @@
 import "./FeatureItem.css";
+import { Link } from "react-router-dom";
 
-const FeatureItem = ({ imgage, alt, title, description }) => {
+const FeatureItem = ({ imgage, alt, title, description, linkTo }) => {
     return (
-        <section className="feature-item">
+        <Link to= {linkTo} className="feature-item">
             <img src={imgage} alt={alt} />
             <h3>{title}</h3>
             <p>{description}</p>
-        </section>
+        </Link>
     );
 };
 

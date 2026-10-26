@@ -6,7 +6,6 @@
     padding: 10px 20px;
     border-bottom: 1px solid var(--gold);
     background-color: var(--bg-lighter);
-
 }
 
 .header-left {
@@ -19,6 +18,10 @@
     color: var(--gold);
     margin: 0;
     font-weight: 150;
+}
+
+.main-header a {
+    text-decoration: none;
 }
 
 .main-header img {
