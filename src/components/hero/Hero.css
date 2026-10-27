@@ -14,3 +14,25 @@
     object-fit: cover;
     filter: brightness(0.7);
 }
+
+.hero .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border: 0;
+    background: transparent;
+    font-size: 2.5em;
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.hero #next-arrow {
+    right: 30px;
+}
+
+.hero #prev-arrow {
+    left: 20px;
+}
