@@ -1,5 +1,6 @@
 import "./Contact.css";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Contact() {
   const [result, setResult] = useState("");
@@ -18,14 +19,17 @@ export default function Contact() {
     const data = await response.json();
     if (data.success) {
       setResult("Form Submitted Successfully");
+      toast.success("Form Submitted Successfully");
       event.target.reset();
     } else {
       setResult("Error");
+      toast.error("Error");
     }
   };
 
   return (
     <div className="contact">
+      <Toaster position="bottom-right" />
         <h1>Contact Us</h1>
         <h3>We would love to hear from you!</h3>
         <form onSubmit={onSubmit}>
