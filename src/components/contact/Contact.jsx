@@ -1,13 +1,51 @@
 import "./Contact.css";
+import { useState } from "react";
 
-const Contact = () => {
-    return (
-        <section className="contact">
-            <h2>CONTACT US</h2>
-            <p>Have a question or special request? We'd love to hear from you.</p>
-        </section>
-    );
-};
+export default function Contact() {
+  const [result, setResult] = useState("");
 
-export default Contact;
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    formData.append("access_key", "6de9fc3c-7f69-4a22-a32c-98341e29db0d");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      setResult("Error");
+    }
+  };
+
+  return (
+    <div className="contact">
+        <h1>Contact Us</h1>
+        <h3>We would love to hear from you!</h3>
+        <form onSubmit={onSubmit}>
+        <p>
+        <label>Name: </label>
+        <input type="text" name="name" required/>
+        </p>
+        <p>
+        <label>Email: </label>
+        <input type="email" name="email" required/>
+        </p>
+        <p>
+        <label>Message: </label>
+        <textarea name="message" required></textarea>
+        </p>
+        <button type="submit">SEND MESSAGE</button>
+        <span>{result}</span>
+        </form>
+    </div>
+  );
+}
+
            

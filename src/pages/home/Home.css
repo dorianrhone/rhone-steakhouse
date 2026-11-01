@@ -1,0 +1,17 @@
+.contact-location {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Stacks them vertically on mobile devices */
+@media (max-width: 850px) {
+  .contact-location {
+    flex-direction: column;
+  }
+}

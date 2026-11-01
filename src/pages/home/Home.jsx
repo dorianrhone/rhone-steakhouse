@@ -3,6 +3,7 @@ import Intro from "../../components/intro/Intro";
 import Features from "../../components/features/Features";
 import Contact from "../../components/contact/Contact";
 import Location from "../../components/location/Location";
+import "./Home.css";
 
 
 const Home = () => {
@@ -14,8 +15,10 @@ const Home = () => {
                 description="An elevated Charleston dining experience centered around exceptional cuisine, fine wine, and genuine hospitality."
             />
             <Features />
-            <Contact />
-            <Location />
+            <div className="contact-location">
+                <Contact />
+                <Location />
+            </div>
         </div>
     );
 };
