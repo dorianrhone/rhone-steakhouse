@@ -32,7 +32,6 @@ const Events = () => {
                     />
                 ))}
             </div>
-
             <Contact />
         </div>
     );
