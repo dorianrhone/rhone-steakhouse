@@ -15,8 +15,7 @@
   margin: 20px auto;
   padding: 24px 28px;
   background-color: #171717;
-  border: 1px solid rgba(201, 154, 82, 0.2);
-  border-radius: 6px;
+  border: 1px solid var(--gold);
   text-align: left;
 }
 
