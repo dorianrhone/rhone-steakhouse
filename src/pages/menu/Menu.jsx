@@ -22,24 +22,14 @@ const Menu = () => {
                 title="OUR MENU"
                 description="STEAK - SEAFOOD - WINE"
             />
-            <Category
-                title="Appetizers"
-                categoryImage={appBg}
-                items={menuItems}
-                type="menu"
-            />
-            <Category
-                title="Main Courses"
-                categoryImage={mainBg}
-                items={menuItems}
-                type="menu"
-            />
-            <Category
-                title="Desserts"
-                categoryImage={dessertBg}
-                items={menuItems}
-                type="menu"
-            />
+            <div className="menu-items">
+                {menuItems.map((item) => (
+                    <Category 
+                    key={item._id} 
+                    description="Best Steak in Town"
+                    src={item.image} />
+                ))}
+            </div>
         </div>
     );
 };
