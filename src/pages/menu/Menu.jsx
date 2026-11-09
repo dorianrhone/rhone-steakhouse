@@ -16,6 +16,14 @@ const Menu = () => {
 
     },[]);
 
+    const categoryList = [
+        "APPETIZERS",
+        "STEAK & CHOPS",
+        "SEAFOOD",
+        "DESSERT",
+        "WINES"
+    ];
+
     return (
         <div id="menu" className="page">
             <Intro
@@ -23,13 +31,13 @@ const Menu = () => {
                 description="STEAK - SEAFOOD - WINE"
             />
             <div className="menu-items">
-                {menuItems.map((item) => (
-                    <Category 
-                    key={item._id} 
-                    name={item.name}
-                    description={item.description}
-                    price={item.price}
-                    src={item.img_name} />
+                {categoryList.map((category) => (
+                    <Category
+                        key={category}
+                        title={category}
+                        categoryImage={menuItems.find(i => i.category === category)?.img_name}
+                        items={menuItems.filter(i => i.category === category)}
+                     />
                 ))}
             </div>
         </div>

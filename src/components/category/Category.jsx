@@ -7,7 +7,7 @@ const Category = ({ title, categoryImage, items = [], type }) => {
     return (
         <section className="category-container">
             <div className="category-feature-img">
-                <img src={categoryImage} alt={title} />
+                <img src={`${SERVER_URL}/images/${categoryImage}`} alt={title} />
             </div>
             <div className="category-content">
                 <h2 className="category-title">{title}</h2>
