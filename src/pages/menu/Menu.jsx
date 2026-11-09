@@ -26,8 +26,10 @@ const Menu = () => {
                 {menuItems.map((item) => (
                     <Category 
                     key={item._id} 
-                    description="Best Steak in Town"
-                    src={item.image} />
+                    name={item.name}
+                    description={item.description}
+                    price={item.price}
+                    src={item.img_name} />
                 ))}
             </div>
         </div>
