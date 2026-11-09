@@ -2,6 +2,8 @@ import "./Category.css";
 import ItemCard from "../itemCard/ItemCard";
 
 const Category = ({ title, categoryImage, items = [], type }) => {
+    const SERVER_URL = "https://rhone-steakhouse-server.onrender.com/"
+
     return (
         <section className="category-container">
             <div className="category-feature-img">
@@ -12,12 +14,12 @@ const Category = ({ title, categoryImage, items = [], type }) => {
                 <div className="category-items">
                     {items.map((item) => (
                         <ItemCard
-                            key={item.id}
-                            img={item.img}
-                            name={item.name}
-                            description={item.description}
-                            price={item.price}
-                            type={type}
+                        key={item.id}
+                        img={`${SERVER_URL}/images/${item.img_name}`}
+                        name={item.name}
+                        description={item.description}
+                        price={item.price}
+                        type={type}
                         />
                     ))}
                 </div>
