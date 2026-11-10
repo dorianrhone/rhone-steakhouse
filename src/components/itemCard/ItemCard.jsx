@@ -24,7 +24,7 @@ const ItemCard = ({ img, name, description, price }) => {
                     <span className="item-price">{price}</span>
                 </div>
                 <p>{description}</p>
-                {showDialog && <ItemDialog onClose={hideDetails}/>}
+                {showDialog && <ItemDialog />}
             </div>
         </div>
     );
