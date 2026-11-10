@@ -2,13 +2,16 @@ import Intro from "../../components/intro/Intro";
 import Category from "../../components/category/Category";
 import {useState, useEffect} from "react";
 import axios from "axios";
+import { API_BASE_URL } from "../../config";
 
 const Menu = () => {
     const [menuItems, setMenuItems] = useState([]);
+    const [pending, setPending] = useState(true);
 
     useEffect(() =>{ 
         const loadMenuItems = async() => {
-            const response = await axios.get("https://rhone-steakhouse-server.onrender.com/api/menu");
+            const response = await axios.get(`${API_BASE_URL}/api/menu`);
+            setPending(false);
             setMenuItems(response.data);
         };
         
@@ -31,6 +34,7 @@ const Menu = () => {
                 description="STEAK - SEAFOOD - WINE"
             />
             <div className="menu-items">
+                {pending && <p>Loading Menu...</p>}
                 {categoryList.map((category) => (
                     <Category
                         key={category}

@@ -1,0 +1,12 @@
+#item-dialog {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #C99A52;
+}
+
+.w3-modal-content {
+    display: block;
+    background-color: #1A1A1A;
+    border-radius: 5px;
+    padding: 20px;
+}
