@@ -3,28 +3,28 @@ import ItemDialog from "../itemDialog/ItemDialog";
 import { useState } from "react";
 import { API_BASE_URL } from "../../config";
 
-const ItemCard = ({ img, name, description, price }) => {
+const ItemCard = (items) => {
     const [showDialog, setShowDialog] = useState(false);
 
     const showDetails = () => {
         setShowDialog(true);
     };
 
-    const hideDetails = () => {
+    const hideDetails = (e) => {
+        e.stopPropagation();
         setShowDialog(false);
-        console.log(showDialog);
     };
 
     return (
         <div className="item-card" onClick={showDetails}>
-            <img src={img} alt={name} />
+            <img src={`${API_BASE_URL}/images/${items.img}`} alt="Item" />
             <div className="item-details">
                 <div className="item-header">
-                    <h3>{name}</h3>
-                    <span className="item-price">{price}</span>
+                    <h3>{items.name}</h3>
+                    <span className="item-price">{items.price}</span>
                 </div>
-                <p>{description}</p>
-                {showDialog && <ItemDialog />}
+                <p>{items.description}</p>
+                {showDialog && <ItemDialog item={items} onClose={hideDetails} />}
             </div>
         </div>
     );
