@@ -1,4 +1,5 @@
 import "./ItemDialog.css";
+import { API_BASE_URL } from "../../config";
 
 const ItemDialog = (item) => {
     return (
@@ -9,7 +10,13 @@ const ItemDialog = (item) => {
                         onClick={item.onClose}>
                         &times;</span>
                 </div>
-                <div id="item-dialog-content"></div>
+                <div id="item-dialog-content">
+                    <img src={`${API_BASE_URL}/images/${item.img_name}`} alt="Item" />
+                    <h3>{item.name}</h3>
+                    <p>{item.description}</p>
+                    <span className="item-price">{item.price}</span>
+                    <p>{item.category}</p>
+                </div>
             </div>
         </div>
     )
