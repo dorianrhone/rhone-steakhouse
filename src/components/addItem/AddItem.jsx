@@ -1,5 +1,6 @@
 import {useState} from "react";
 import { API_BASE_URL } from "../../config";
+import "./AddItem.css";
 
 const AddItem = (props) => {
     const [prevSrc, setPrevSrc] = useState("");
