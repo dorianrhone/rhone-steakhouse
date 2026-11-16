@@ -5,8 +5,39 @@
 }
 
 .w3-modal-content {
+    font-family: serif;
     display: block;
     background-color: #1A1A1A;
     border-radius: 5px;
-    padding: 20px;
+    background-color: #1A1A1A;
+    max-width: 420px;
+}
+
+#item-dialog-content {
+    text-align: left;
+    padding: 40px;
+    font-family: var(--font-body);
+    color: var(--text-light);
+}
+
+#item-dialog-content h2,
+#item-dialog-content h3 {
+    font-family: var(--font-heading);
+    color: var(--gold);
+    margin: 6px 0;
+}
+
+#item-dialog-content .item-price {
+    font-family: var(--font-heading);
+    color: var(--gold);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#item-dialog-content img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 12px;
 }

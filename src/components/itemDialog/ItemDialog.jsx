@@ -12,10 +12,10 @@ const ItemDialog = ({item, onClose}) => {
                 </div>
                 <div id="item-dialog-content">
                     <img src={`${API_BASE_URL}/images/${item.img_name}`} alt="Item" />
-                    <h3>{item.name}</h3>
+                    <p>{item.category}</p>
+                    <h2>{item.name}</h2>
                     <p>{item.description}</p>
                     <span className="item-price">{item.price}</span>
-                    <p>{item.category}</p>
                 </div>
             </div>
         </div>
