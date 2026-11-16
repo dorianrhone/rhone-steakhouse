@@ -1,7 +1,7 @@
 import {useState} from "react";
 import { API_BASE_URL } from "../../config";
 
-const AddItem = () => {
+const AddItem = (props) => {
     const [prevSrc, setPrevSrc] = useState("");
     const [result, setResult] = useState("");
 
@@ -21,7 +21,7 @@ const AddItem = () => {
 
         if(response.status==200){
             setResult("Item Added Successfully!");
-            pprops.add_item_to_menu(await response.json());
+            props.add_item_to_menu(await response.json());
             props.close_dialog();
         } else {
             setResult("Error Adding Item");
@@ -74,7 +74,7 @@ const AddItem = () => {
 
                             <p>
                                 <label htmlFor="item-image">Image:</label>
-                                <input type="file" id="item-image" name="image" accept="image/*" onChange={uploadImage}/>
+                                <input type="file" id="img" name="img" accept="image/*" onChange={uploadImage}/>
                             </p>
                         </section>
 
