@@ -14,10 +14,12 @@ const Category = ({ title, categoryImage, items = [], type }) => {
                     {items.map((item) => (
                         <ItemCard
                         key={item._id}
-                        img={`${API_BASE_URL}/images/${item.img_name}`}
+                        _id={item._id}
                         name={item.name}
+                        category={item.category}
                         description={item.description}
                         price={item.price}
+                        img_name={item.img_name}
                         type={type}
                         />
                     ))}

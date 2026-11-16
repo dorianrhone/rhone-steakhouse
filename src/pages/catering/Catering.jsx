@@ -20,13 +20,13 @@ const Catering = () => {
                 description="BRING THE RHONE EXPERIENCE TO YOUR EVENT"
             />
             <Category 
-                title="Steakhouse Package"
+                title="Surf & Turf"
                 categoryImage={stripImg}
                 items={cateringData}
                 type="catering"
             />
             <Category 
-                title="Seafood Package"
+                title="Wine Special"
                 categoryImage={salmonImg}
                 items={cateringData}
                 type="catering"
