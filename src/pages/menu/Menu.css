@@ -1,8 +1,13 @@
-.add-item-btn-container {
+.add-item-button {
     position: relative;
     z-index: 10;
-    text-align: center;
-    margin: 24px 0 10px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1100px;
+    box-sizing: border-box;
+    margin: 24px auto 10px;
+    padding: 0 20px;
 }
 
 #btn-add-item {
