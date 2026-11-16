@@ -1,148 +1,62 @@
-/* Modal Overlay */
 #add-item-dialog {
     display: block;
-    background-color: rgba(0, 0, 0, 0.78);
-    padding-top: 50px;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* Modal Box */
 #add-item-dialog .w3-modal-content {
-    display: block;
     background-color: var(--bg-lighter);
-    border: 1px solid rgba(201, 154, 82, 0.45);
+    border: 1px solid var(--gold);
     border-radius: 5px;
-    width: 90%;
-    max-width: 480px;
+    max-width: 450px;
     color: var(--text-light);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.75);
 }
 
-/* Close Button */
 #add-item-dialog #dialog-close {
     color: var(--gold);
-    font-size: 1.6rem;
-    transition: color 0.2s ease;
 }
 
-#add-item-dialog #dialog-close:hover {
-    background-color: transparent !important;
-    color: var(--text-light) !important;
-}
-
-/* Inner Content Container */
-#add-item-dialog #item-dialog-content {
-    padding: 28px 32px;
-    text-align: left;
-    font-family: var(--font-body);
-}
-
-#add-item-dialog #item-dialog-content h2 {
+#add-item-dialog h2 {
     font-family: var(--font-heading);
     color: var(--gold);
-    font-size: 1.8rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
     text-align: center;
-    margin: 0 0 22px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid rgba(201, 154, 82, 0.3);
-}
-
-/* Form Layout & Labels */
-#add-item-dialog form p {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    margin: 0 0 16px;
+    margin-bottom: 18px;
 }
 
 #add-item-dialog label {
-    font-family: var(--font-body);
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
+    display: block;
     color: var(--gold);
-}
-
-/* Text, Number & Select Inputs */
-#add-item-dialog #item-name,
-#add-item-dialog #item-description,
-#add-item-dialog #item-price,
-#add-item-dialog #item-category {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: var(--bg-dark);
-    border: 1px solid rgba(201, 154, 82, 0.35);
-    border-radius: 3px;
-    padding: 10px 12px;
-    color: var(--text-light);
-    font-family: var(--font-body);
-    font-size: 0.95rem;
-}
-
-#add-item-dialog #item-name:focus,
-#add-item-dialog #item-description:focus,
-#add-item-dialog #item-price:focus,
-#add-item-dialog #item-category:focus {
-    outline: none;
-    border-color: var(--gold);
-}
-
-/* Image Upload & Constrained Preview */
-#add-item-dialog #img {
-    color: var(--text-light);
     font-size: 0.85rem;
+    margin-bottom: 4px;
 }
 
-#add-item-dialog #img::file-selector-button {
-    background-color: transparent;
-    color: var(--gold);
-    border: 1px solid var(--gold);
+#add-item-dialog input[type="text"],
+#add-item-dialog input[type="number"],
+#add-item-dialog select {
+    width: 100%;
+    padding: 8px 10px;
+    background-color: var(--bg-dark);
+    border: 1px solid rgba(201, 154, 82, 0.4);
     border-radius: 3px;
-    padding: 6px 14px;
-    margin-right: 12px;
-    font-family: var(--font-body);
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-#add-item-dialog #img::file-selector-button:hover {
-    background-color: var(--gold);
-    color: var(--bg-dark);
-}
-
-#img-prev-section {
-    align-items: center;
-    margin-bottom: 12px;
+    color: var(--text-light);
 }
 
 #img-prev {
     width: 100%;
-    max-width: 100%;
-    height: 180px;
+    height: 160px;
     object-fit: cover;
     border-radius: 4px;
-    border: 1px solid rgba(201, 154, 82, 0.35);
 }
 
-/* Submit Button */
 #add-item-dialog button[type="submit"] {
     width: 100%;
+    padding: 10px;
     background-color: transparent;
-    color: var(--gold);
     border: 1px solid var(--gold);
-    border-radius: 3px;
-    padding: 12px;
-    margin-top: 6px;
+    color: var(--gold);
     font-family: var(--font-heading);
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    letter-spacing: 1.5px;
     cursor: pointer;
-    transition: all 0.25s ease;
 }
 
 #add-item-dialog button[type="submit"]:hover {
@@ -150,11 +64,7 @@
     color: var(--bg-dark);
 }
 
-/* Status Result Message */
 #add-item-result {
     text-align: center;
-    font-family: var(--font-body);
-    font-size: 0.9rem;
     color: var(--gold);
-    margin: 8px 0 0;
 }
