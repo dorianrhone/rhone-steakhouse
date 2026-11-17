@@ -1,0 +1,29 @@
+.add-item-button {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1100px;
+    box-sizing: border-box;
+    margin: 24px auto 10px;
+    padding: 0 20px;
+}
+
+#btn-add-item {
+    background-color: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 10px 24px;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#btn-add-item:hover {
+    background-color: var(--gold);
+    color: var(--bg-dark);
+}
