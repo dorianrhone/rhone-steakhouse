@@ -1,11 +1,12 @@
+import {useState, useEffect} from "react";
+import { API_BASE_URL } from "../../config";
+import axios from "axios";
+
 import Contact from "../../components/contact/Contact";
 import Intro from "../../components/intro/Intro";
 import Category from "../../components/category/Category";
-import {useState, useEffect} from "react";
-import axios from "axios";
-import { API_BASE_URL } from "../../config";
+import AddItem from "../../components/addItem/AddItem";
 import "./Catering.css";
-
 
 const Catering = () => {
     const [cateringItems, setCateringItems] = useState([]);
@@ -26,7 +27,7 @@ const Catering = () => {
 
     useEffect(() =>{ 
         const loadCateringItems = async() => {
-            const response = await axios.get(`${API_BASE_URL}/api/catering`);
+            const response = await axios.get(`${API_BASE_URL}/api/menu`);
             setPending(false);
             setCateringItems(response.data);
         };
@@ -35,28 +36,12 @@ const Catering = () => {
 
     },[]);
 
-    const cateringData = [
-        {
-            name: "Surf & Turf",
-            description: "A delicious combination of steak and seafood, perfect for any occasion.",
-            price: "$50 per person"
-        },
-        {
-            name: "Wine Special",
-            description: "A curated selection of fine wines to complement your meal.",
-            price: "$30 per person"
-        },
-        {
-            name: "Rhone's Special",
-            description: "A unique dish crafted by our chef, showcasing the best of our menu.",
-            price: "$40 per person"
-        }
-    ];
+    const cateringData1 = cateringItems.filter(item => item.category === "STEAK & CHOPS" || item.category === "SEAFOOD");
 
-    const stripImg = "/images/strip.jpg";
-    const salmonImg = "/images/salmon.jpg";
-    const ribeyeImg = "/images/ribeye.jpg";
+    const cateringData2 = cateringItems.filter(item => item.category === "WINES");
 
+    const cateringData3 = cateringItems.filter(item => item.category === "APPETIZERS" || item.category === "DESSERT");
+    
     return (
         <div id="catering" className="page">
             <Intro 
@@ -73,28 +58,26 @@ const Catering = () => {
                 close_dialog={closeAddDialog}
             />
             )}
-
-
+        
             <div className="catering-items">
                 {pending && <p>Loading Catering Items...</p>}
-
-                <Category 
+                <Category
+                    catergoryImage={`${API_BASE_URL}/images/lobster.png`}
                     title="Surf & Turf"
-                    categoryImage={stripImg}
-                    items={cateringData}
-                    type="catering"
+                    description="A combination of the finest cuts of steak and fresh seafood, perfect for any occasion."
+                    items={cateringData1}
                 />
-                <Category 
+                <Category
+                    catergoryImage={`${API_BASE_URL}/images/wine.png`}
                     title="Wine Special"
-                    categoryImage={salmonImg}
-                    items={cateringData}
-                    type="catering"
+                    description="A selection of our finest wines, carefully curated to complement your meal."
+                    items={cateringData2}
                 />
-                <Category 
+                <Category
+                    catergoryImage={`${API_BASE_URL}/images/p1.png`}
                     title="Rhone's Special"
-                    categoryImage={ribeyeImg}
-                    items={cateringData}
-                    type="catering"
+                    description="Our signature dishes, crafted with the utmost care and attention to detail."
+                    items={cateringData3}
                 />
             </div>
            <Contact />
