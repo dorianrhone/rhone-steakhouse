@@ -37,9 +37,7 @@ const Catering = () => {
     },[]);
 
     const cateringData1 = cateringItems.filter(item => item.category === "STEAK & CHOPS" || item.category === "SEAFOOD");
-
     const cateringData2 = cateringItems.filter(item => item.category === "WINES");
-
     const cateringData3 = cateringItems.filter(item => item.category === "APPETIZERS" || item.category === "DESSERT");
     
     return (
@@ -62,19 +60,19 @@ const Catering = () => {
             <div className="catering-items">
                 {pending && <p>Loading Catering Items...</p>}
                 <Category
-                    catergoryImage={`${API_BASE_URL}/images/lobster.png`}
+                    categoryImage="lobster.png"
                     title="Surf & Turf"
                     description="A combination of the finest cuts of steak and fresh seafood, perfect for any occasion."
                     items={cateringData1}
                 />
                 <Category
-                    catergoryImage={`${API_BASE_URL}/images/wine.png`}
+                    categoryImage="wine.png"
                     title="Wine Special"
                     description="A selection of our finest wines, carefully curated to complement your meal."
                     items={cateringData2}
                 />
                 <Category
-                    catergoryImage={`${API_BASE_URL}/images/p1.png`}
+                    categoryImage="p1.png"
                     title="Rhone's Special"
                     description="Our signature dishes, crafted with the utmost care and attention to detail."
                     items={cateringData3}
